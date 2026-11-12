@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MindTrace Analytics</title><link rel="stylesheet" href="dashboard.css"></head>
+<body><header><div class="brand"><span>M</span><div><b>MindTrace</b><small>Attention analytics</small></div></div><nav><a class="active" href="dashboard.html">Dashboard</a><a href="settings.html">Settings</a></nav></header>
+<main><section class="welcome"><div><p class="eyebrow">YOUR DAILY SNAPSHOT</p><h1>Understand your attention.</h1><p>Small insights can help you build better browsing habits.</p></div><div class="date" id="date"></div></section>
+<section class="summary">
+ <article class="hero"><span>ATTENTION SCORE</span><strong id="score">--<small>/100</small></strong><p id="scoreText">Your score is based on productive time and tab switching.</p></article>
+ <article><span>TOTAL BROWSING</span><b id="total">0m</b><small>Time tracked today</small></article>
+ <article><span>TAB SWITCHES</span><b id="switches">0</b><small>Changes between websites</small></article>
+ <article><span>ESTIMATED DISTRACTION COST</span><b id="cost">0m</b><small>Approx. 15 seconds per switch</small></article>
+</section>
+<section class="grid">
+ <article class="panel"><div class="panel-title"><div><h2>Where your time went</h2><p>Time by website domain</p></div></div><div id="sites" class="site-list"><p class="empty">No browsing data yet. Browse a few websites first.</p></div></article>
+ <article class="panel"><div class="panel-title"><div><h2>Time by category</h2><p>Based on your website settings</p></div></div><div class="category-row"><span>Productive</span><b id="productive">0m</b></div><div class="bar"><i id="productiveBar"></i></div><div class="category-row"><span>Distracting</span><b id="distracting">0m</b></div><div class="bar pink"><i id="distractingBar"></i></div><div class="category-row"><span>Other</span><b id="neutral">0m</b></div><div class="bar gray"><i id="neutralBar"></i></div><p class="note">Categories are editable in Settings. Unlisted sites are counted as Other.</p></article>
+ <article class="panel timeline"><div class="panel-title"><div><h2>Attention timeline</h2><p>Browsing minutes by hour</p></div></div><div id="timeline" class="timeline-bars"></div></article>
+ <article class="panel insight"><div class="panel-title"><div><h2>Your attention insight</h2><p>A simple pattern from today's activity</p></div></div><div id="insight">Your daily insight will appear here after you browse.</div><div class="tip">💡 Tip: Try a 25-minute Focus Sprint from the extension popup.</div></article>
+</section><p class="footnote">MindTrace stores domain names and time totals only. It does not read page text, passwords or form entries. Attention score and distraction cost are estimates, not clinical measurements.</p></main><script src="dashboard.js"></script></body></html>

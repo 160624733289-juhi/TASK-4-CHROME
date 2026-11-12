@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "MindTrace \u2013 Attention Detective",
+  "version": "1.0.0",
+  "description": "Understand your browsing habits, tab switching and focus patterns.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "MindTrace",
+    "default_popup": "popup.html"
+  },
+  "options_page": "settings.html"
+}

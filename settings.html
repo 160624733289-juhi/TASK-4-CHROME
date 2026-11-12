@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MindTrace Settings</title><link rel="stylesheet" href="settings.css"></head><body><main><a href="dashboard.html">← Back to dashboard</a><h1>MindTrace Settings</h1><p>Choose how MindTrace categorises the websites you visit.</p>
+<label>Daily focus goal (minutes)</label><input id="goal" type="number" min="15" max="1440" value="120">
+<label>Productive websites <small>One domain per line</small></label><textarea id="productive" rows="6"></textarea>
+<label>Distracting websites <small>One domain per line</small></label><textarea id="distracting" rows="6"></textarea>
+<label>Local analytics backend URL</label><input id="backend" value="http://localhost:3000">
+<button id="save">Save settings</button><span id="message"></span><p class="privacy">Only website domains and time totals are tracked. Page content is not collected.</p></main><script src="settings.js"></script></body></html>
